@@ -18,7 +18,9 @@
         'dependencies': [
             "<!(node -p \"require('node-addon-api').gyp\")"
         ],
-        'defines': [ 'NAPI_DISABLE_CPP_EXCEPTIONS-xx' ],
+        'defines': [
+            'NAPI_DISABLE_CPP_EXCEPTIONS-xx'
+        ],
         'conditions': [
             ['OS=="win"', { 'defines': [ '_HAS_EXCEPTIONS=1' ] }]
         ]
